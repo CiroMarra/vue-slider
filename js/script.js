@@ -96,7 +96,11 @@ const {
             } else {
               this.activeImage = this.slides.images.length - 1;
             }
-    }
+    },
+
+      activateImage: function(clickedIndex) {
+        this.activeImage = clickedIndex;
+      },
     }
     
 }).mount('#app');
